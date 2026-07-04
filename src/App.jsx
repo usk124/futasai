@@ -1,15 +1,9 @@
 import { useState, useMemo, useRef, useEffect } from "react";
 
 // ── データ ──
-const DEFAULT_NAMES   = { person1: "ゆうすけ", person2: "あきほ" };
-const DEFAULT_ENTRIES = [
-  { id: 1, date: "2025/06/25", shop: "ほっともっと", p1: 460, p2: 660, half: 520, payer: "p1" },
-  { id: 2, date: "2025/06/26", shop: "ケンタッキー", p1: 330, p2: 330, half: 330, payer: "p2" },
-];
-const DEFAULT_FIXED = [
-  { id: 1, name: "Amazonプライム", priceEx: "", priceIn: 600, note: "年払い" },
-  { id: 2, name: "キック代", priceEx: "", priceIn: 4000, note: "月払い" },
-];
+const DEFAULT_NAMES   = { person1: "名前", person2: "名前" };
+const DEFAULT_ENTRIES = [];
+const DEFAULT_FIXED   = [];
 const DEFAULT_CARRY = { amount: 0, who: "p1" };
 const STORAGE_KEY = "warikan-data-v1";
 
